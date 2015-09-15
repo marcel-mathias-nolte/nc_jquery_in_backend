@@ -1,5 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
-
+<?php
 /**
  * Contao Open Source CMS
  * 
@@ -7,7 +6,7 @@
  * 
  * @package   NC JQuery in Backend 
  * @author    Marcel Mathias Nolte
- * @copyright Marcel Mathias Nolte 2013
+ * @copyright Marcel Mathias Nolte 2015
  * @website	  https://www.noltecomputer.com
  * @license   <marcel.nolte@noltecomputer.de> wrote this file. As long as you retain this notice you
  *            can do whatever you want with this stuff. If we meet some day, and you think this stuff 
@@ -29,5 +28,3 @@ if (TL_MODE == 'BE')
 	$jquery_src = 'assets/jquery/core/' . reset((scandir(TL_ROOT . '/assets/jquery/core', 1))) . '/jquery.min.js';
 	array_unshift($GLOBALS['TL_JAVASCRIPT'], $jquery_src);
 }
-
-?>
